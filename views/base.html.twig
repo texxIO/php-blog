@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+    <head>
+        <title>{% block title %}PHP Blog Test{% endblock %}</title>
+        <link rel="stylesheet" type="text/css" href="/assets/style.css">
+        <script src="/assets/functions.js"></script>
+    </head>
+    <body>
+
+    <div class="container">
+        {% block page_title %}
+               <h1> Page title</h1>
+        {% endblock %}
+
+        {{  include ('pages/partials/menu.html.twig') }}
+        <hr/>
+        {% block content %}Here's come the content !{% endblock %}
+    </div>
+    </body>
+</html>

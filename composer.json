@@ -1,0 +1,32 @@
+{
+    "name": "ionutm/php-blog",
+    "description": "PHP Blog Test with no Framework",
+    "type": "project",
+    "require-dev": {
+
+   },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ionut Mihaescu",
+            "email": "ionut.mihaescu@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+      "php":"~7.2",
+      "nikic/fast-route": "^1.0",
+      "league/container": "^2.2",
+      "symfony/http-foundation": "^3.2",
+      "symfony/var-dumper": "^3.2",
+      "filp/whoops": "^2.1",
+      "twig/twig": "^1.28",
+      "smarty/smarty": "~3.1"
+
+    },
+    "autoload": {
+    "psr-4": {
+      "PhpBlog\\": "src/"
+    }
+  }
+}
